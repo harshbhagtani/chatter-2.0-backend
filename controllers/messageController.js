@@ -6,7 +6,7 @@ const User = require("../models/Users");
 const ErrorHandler = require("../utils/ErrorHandler");
 const grid = require("gridfs-stream");
 
-const BASE_URL = "http://localhost:3002";
+const BASE_URL = "https://chatter-2-0-backend.onrender.com";
 
 const fetchMessages = catchAsync(async (req, res) => {
   if (!req.query.chatId) {
