@@ -2,7 +2,7 @@ const catchAsync = require("../middlewares/catchAsync");
 const Chat = require("../models/ChatModel");
 const Message = require("../models/Message");
 const User = require("../models/Users");
-const ErrorHandler = require("../utils/ErrorHandler");
+const ErrorHandler = require("../utils");
 
 const accessChat = catchAsync(async (req, res) => {
   const { userId } = req.body;

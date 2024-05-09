@@ -3,8 +3,8 @@ const catchAsync = require("../middlewares/catchAsync");
 const Chat = require("../models/ChatModel");
 const Message = require("../models/Message");
 const User = require("../models/Users");
-const ErrorHandler = require("../utils/ErrorHandler");
 const grid = require("gridfs-stream");
+const ErrorHandler = require("../utils");
 
 const BASE_URL = "https://chatter-2-0-backend.onrender.com";
 

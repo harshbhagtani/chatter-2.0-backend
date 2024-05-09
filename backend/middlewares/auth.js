@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/Users");
-const ErrorHandler = require("../utils/ErrorHandler");
+const ErrorHandler = require("../utils");
 const catchAsync = require("./catchAsync");
 
 const auth = catchAsync(async (req, res, next) => {
@@ -26,6 +26,3 @@ const auth = catchAsync(async (req, res, next) => {
 });
 
 module.exports = auth;
-
-
-

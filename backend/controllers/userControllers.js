@@ -1,6 +1,5 @@
 const catchAsync = require("../middlewares/catchAsync");
 const User = require("../models/Users");
-const ErrorHandler = require("../utils/ErrorHandler");
 
 const userSignUp = catchAsync(async (req, res) => {
   const payload = { ...req.body };

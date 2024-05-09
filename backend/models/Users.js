@@ -2,7 +2,7 @@ const { hash, compare } = require("bcrypt");
 const { sign } = require("jsonwebtoken");
 const { default: mongoose } = require("mongoose");
 const validator = require("validator");
-const ErrorHandler = require("../utils/ErrorHandler");
+const ErrorHandler = require("../utils");
 
 const userSchema = new mongoose.Schema(
   {
